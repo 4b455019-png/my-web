@@ -2,107 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>關於我｜李宜潔</title>
+<title>李宜潔的作業二 - 關於我</title>
 <link rel="icon" href="img/favicon.svg">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-
+* { margin:0; padding:0; }
 body {
     width:100%;
     min-width:600px;
     max-width:960px;
     margin:0 auto;
-    font-family: Arial, "Microsoft JhengHei", sans-serif;
-    line-height:1.8;
-    background:#f5f5f5;
 }
-
-header {
-    width:100%;
-    background:gray;
-    color:white;
-    padding:18px 24px;
-}
-
-nav {
-    width:100%;
-    background:black;
-    color:white;
-    padding:10px 24px;
-}
-
-nav a {
-    color:white;
-    text-decoration:none;
-    margin-right:22px;
-}
-
-nav a:hover { text-decoration:underline; }
-
-main {
-    width:100%;
-    background:#f0f0f0;
-    padding:24px 30px;
-}
-
-main h2 {
-    margin-top:18px;
-    margin-bottom:8px;
-}
-
-main h3 {
-    margin-top:14px;
-    margin-bottom:6px;
-}
-
-.toc {
-    background:white;
-    border:1px solid #ccc;
-    padding:16px 24px;
-    margin-bottom:24px;
-}
-
-.toc ul { padding-left:24px; }
-
-section {
-    background:white;
-    padding:18px 24px;
-    margin-bottom:18px;
-    border-left:5px solid #888;
-}
-
-blockquote {
-    margin:14px 0;
-    padding:12px 18px;
-    background:#e5e5e5;
-    border-left:6px solid #555;
-    font-style:italic;
-}
-
-footer {
-    width:100%;
-    background:#eaeaea;
-    clear:both;
-    padding:16px 24px;
-}
-
-footer a { color:#333; }
-
-.mark { background:yellow; }
-
-.external-links a {
-    margin-right:20px;
-}
+header { width:100%; background:gray; }
+nav { width:100%; background:black; color:white; }
+nav a { color:white; text-decoration:none; margin-right:18px; }
+main { width:30%; background:#C0C0C0; height:300px; float:left; }
+aside { width:70%; background:lightgray; height:auto; min-height:300px; float:left; }
+footer { width:100%; background:#eaeaea; clear:both; }
 </style>
 </head>
 
-<body id="top">
-
+<body>
 <nav>
 <h1>
-<i class="fa fa-globe" aria-hidden="true"></i>首頁
+<a href="ex2.html"><i class="fa fa-globe" aria-hidden="true"></i>首頁</a>
 <i class="fa fa-address-book-o" aria-hidden="true"></i>目錄
 <i class="fa fa-user-circle" aria-hidden="true"></i>作品集
 <a href="aboutme.html"><i class="fa fa-superpowers" aria-hidden="true"></i>關於我</a>
@@ -116,96 +40,90 @@ footer a { color:#333; }
 </header>
 
 <main>
-    <div class="toc">
-        <h2><i class="fa fa-list" aria-hidden="true"></i> 我的履歷目錄</h2>
-        <ul>
-            <li><a href="#basic">基本資料</a></li>
-            <li><a href="#education">學習經歷</a></li>
-            <li><a href="#skills">個人能力</a></li>
-            <li><a href="#goal">學習目標</a></li>
-        </ul>
-    </div>
-
-    <section id="basic">
-        <h2>一、基本資料</h2>
-        <p>姓名：李宜潔</p>
-        <p>班級：電商二甲，學號：4B455019。</p>
-        <p>目前就讀南臺科技大學，平時對網頁設計、電子商務與數位內容有興趣。</p>
-        <p>姓名的注音：<ruby>李宜潔<rt>ㄌㄧˇ　ㄧˊ　ㄐㄧㄝˊ</rt></ruby></p>
-        <p><a href="#top">回到目錄</a></p>
-    </section>
-
-    <section id="education">
-        <h2>二、學習經歷</h2>
-        <p>在學習過程中，我逐漸接觸 HTML、CSS 與網頁排版。</p>
-        <p>透過實際製作網頁，我學會使用標題、段落、清單、圖片與超連結等 HTML 元素。</p>
-        <p>我也希望能將課堂上學到的內容實際運用在自己的作品中。</p>
-
-        <h3>學習項目</h3>
-        <ol>
-            <li>HTML 網頁結構</li>
-            <li>CSS 基本樣式</li>
-            <li>網頁超連結與頁內書籤</li>
-            <li>圖片與多媒體內容</li>
-        </ol>
-
-        <blockquote>
-            學習不是一次完成，而是在一次次練習與修改中慢慢進步。
-        </blockquote>
-        <p><a href="#top">回到目錄</a></p>
-    </section>
-
-    <section id="skills">
-        <h2>三、個人能力</h2>
-        <p>我目前希望加強以下能力：</p>
-        <ul>
-            <li>網頁設計與前端基礎</li>
-            <li>電子商務相關知識</li>
-            <li>內容企劃與簡報表達</li>
-            <li>團隊合作與問題解決</li>
-        </ul>
-
-        <hr>
-
-        <h3>文字格式示範</h3>
-        <p>
-            <b>粗體 B</b>、
-            <i>斜體 I</i>、
-            <u>底線 U</u>、
-            <s>刪除線 S</s>、
-            <mark class="mark">螢光標記</mark>
-        </p>
-        <p><a href="#top">回到目錄</a></p>
-    </section>
-
-    <section id="goal">
-        <h2>四、學習目標</h2>
-        <p>我希望透過這門課程熟悉網頁製作的基本技巧，並能獨立完成一個具有完整架構的網站。</p>
-        <p>未來也希望持續學習 JavaScript、響應式網頁設計與更多前端技術。</p>
-        <p>除了完成課堂作業，也希望把學到的技術運用在自己的作品集與實際專案中。</p>
-
-        <h3>我的短期目標</h3>
-        <ol>
-            <li>熟悉 HTML 標籤及網頁結構。</li>
-            <li>能使用 CSS 美化網頁。</li>
-            <li>完成自己的個人作品集網站。</li>
-        </ol>
-
-        <hr>
-
-        <p class="external-links">
-            <strong>相關連結：</strong>
-            <a href="https://www.stust.edu.tw/" target="_blank" rel="noopener">南台首頁</a>
-            <a href="https://flipclass.stust.edu.tw/" target="_blank" rel="noopener">FlipClass</a>
-        </p>
-        <p><a href="#top">回到目錄</a></p>
-    </section>
+<h2><i class="fa fa-file-text" aria-hidden="true"></i>關於我目錄</h2>
+<ul>
+<li><a href="#basic">基本資料</a></li>
+<li><a href="#edu">教育背景</a></li>
+<li><a href="#skill">專長與興趣</a></li>
+<li><a href="#goal">未來目標</a></li>
+<li><a href="#link">相關連結</a></li>
+</ul>
 </main>
 
-<footer>
-    <p>&copy;2026娛樂文化有限公司</p>
-    <p><a href="#top">Back to top</a></p>
-</footer>
+<aside>
+<!-- 目錄超連結已放於左側 main -->
 
+<section id="basic">
+<h1 style="font-size:28px;"><i class="fa fa-user" aria-hidden="true"></i>基本資料</h1>
+<p>大家好，我是南臺科技大學電商二甲的學生，姓名為
+<ruby>李<rt>ㄌㄧˇ</rt>宜<rt>ㄧˊ</rt>潔<rt>ㄐㄧㄝˊ</rt></ruby>，學號：4B455019。</p>
+<p>我目前就讀於<b>南臺科技大學</b>，主修電子商務相關課程，對網路行銷與數位內容創作充滿興趣。</p>
+<p>個性樂觀開朗，喜歡團隊合作，也樂於學習新事物。</p>
+</section>
+
+<hr>
+
+<section id="edu">
+<h2 style="font-size:24px;"><i class="fa fa-graduation-cap" aria-hidden="true"></i>教育背景</h2>
+<p>我在高中時期就對商業與資訊結合的領域產生興趣，因此選擇進入南臺科技大學就讀。</p>
+<p>目前修習的課程包括電子商務概論、網頁設計、行銷管理等，希望透過實作累積更多經驗。</p>
+<ol>
+<li>南臺科技大學 － 電子商務系（就讀中）</li>
+<li>高中畢業 － 商業經營科</li>
+<li>國中畢業 － 一般學程</li>
+</ol>
+</section>
+
+<hr>
+
+<section id="skill">
+<h3 style="font-size:20px;"><i class="fa fa-star" aria-hidden="true"></i>專長與興趣</h3>
+<p>我的專長與興趣涵蓋以下幾個方向：</p>
+<ul>
+<li>網頁設計與前端基礎（HTML、CSS）</li>
+<li>社群媒體經營與內容企劃</li>
+<li>攝影與影像後製</li>
+<li>閱讀商業相關書籍</li>
+</ul>
+<p>平時也會練習使用各種設計工具，希望能把創意落實成具體作品。</p>
+<blockquote>
+「學習是一條永無止境的路，保持好奇心，才能看見更遠的風景。」
+</blockquote>
+</section>
+
+<hr>
+
+<section id="goal">
+<h4 style="font-size:18px;"><i class="fa fa-flag" aria-hidden="true"></i>未來目標</h4>
+<p>短期目標是把網頁設計與電子商務的基礎打穩，完成更多實作專題。</p>
+<p>中長期則希望能進入數位行銷或內容產業，運用所學創造有價值的作品。</p>
+<p>我相信<i>持續學習</i>與<u>勇於嘗試</u>是成長的關鍵，即使遇到困難也要<s>輕易放棄</s><mark>堅持到底</mark>。</p>
+</section>
+
+<hr>
+
+<section id="link">
+<h2 style="font-size:22px;"><i class="fa fa-link" aria-hidden="true"></i>相關連結</h2>
+<p>以下提供常用的學校資源連結，方便快速前往：</p>
+<ul>
+<li><a href="https://www.stust.edu.tw/" target="_blank">南台首頁</a>（南臺科技大學官方網站）</li>
+<li><a href="https://flipclass.stust.edu.tw/" target="_blank">FlipClass</a>（南臺數位學習平台）</li>
+</ul>
+<p>歡迎點擊以上連結，了解更多學校資訊與課程資源。</p>
+</section>
+
+<figure>
+<h2><i class="fa fa-camera" aria-hidden="true"></i>我的照片</h2>
+<!-- 請將原本的 images.jpg、name.png 放入 img 資料夾 -->
+<img src="img/images.jpg" width="150" alt="我的照片">
+<img src="img/name.png" width="150" alt="姓名圖片">
+<figcaption>取自網路：https://reurl.cc/WzyVeD</figcaption>
+</figure>
+</aside>
+
+<footer>
+<p>&copy;2026娛樂文化有限公司</p>
+<p><a href="#">Back to top</a></p>
+</footer>
 </body>
 </html>
